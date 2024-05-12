@@ -52,7 +52,7 @@ section {
     justify-content: center;
     background-image: url(../assets/banner-removebg-preview.png);
     background-size: cover;
-    background-color:rgb(231, 176, 203);
+    background-color: rgb(231, 176, 203);
     color: var(--primary-color);
 }
 
@@ -65,16 +65,18 @@ section {
 #banner p {
     width: 70%;
     font-size: 20px;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
-#benefits, #levels {
+#benefits,
+#levels {
     font-family: var(--primary-font);
     text-align: center;
 }
 
 #benefits h1,
-#levels h1 {
+#levels h1,
+#contact h1 {
     font-size: 30px;
     color: var(--secondary-color);
 }
@@ -92,7 +94,7 @@ section {
 #levels .level-card {
     padding: 20px;
     border: 1px solid rgb(204, 199, 199);
-    box-shadow: 6px 10px 33px 0px rgba(173,173,173,1);
+    box-shadow: 6px 10px 33px 0px rgba(173, 173, 173, 1);
     border-radius: 10px;
     transition: 0.3s transform;
 }
@@ -101,21 +103,65 @@ section {
     transform: scale(1.1);
 }
 
-#benefits .benefits-card a {
+#benefits .benefits-card a,
+#levels .level-card a,
+#contact button {
     display: block;
     text-decoration: none;
     border: 1px solid var(--tertiary-color);
     color: var(--primary-color);
     padding: 5px 10px;
     background-color: var(--tertiary-color);
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 5px;
+    width: 50%;
 }
 
 #levels {
     background-color: rgb(231, 176, 203);
+    min-height: 50vh;
 }
 
-#levels .level-card{
+#levels .level-card {
     background-color: var(--primary-color);
+}
+
+#contact {
+    font-family: var(--primary-font);
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    padding: 30px;
+    margin: auto;
+}
+
+form * {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+}
+
+form input,
+textarea {
+    border: 1px solid gray;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    transition: 0.3s transform;
+}
+
+#contact button:hover {
+    transform: scale(1.1);
 }
