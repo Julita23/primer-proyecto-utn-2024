@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(103, 96, 96);
+    --tertiary-color: deeppink;
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.logo-aria {
+    height: 60px;
+    width: auto;
+}
+
+section {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assets/banner-removebg-preview.png);
+    background-size: cover;
+    background-color:rgb(231, 176, 203);
+    color: var(--primary-color);
+}
+
+#banner h1 {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#banner p {
+    width: 70%;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+#benefits, #levels {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+#benefits h1,
+#levels h1 {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+#benefits .container-grid-benefits,
+#levels .container-grid-levels {
+    color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 40px;
+}
+
+#benefits .benefits-card,
+#levels .level-card {
+    padding: 20px;
+    border: 1px solid rgb(204, 199, 199);
+    box-shadow: 6px 10px 33px 0px rgba(173,173,173,1);
+    border-radius: 10px;
+    transition: 0.3s transform;
+}
+
+#benefits .benefits-card:hover {
+    transform: scale(1.1);
+}
+
+#benefits .benefits-card a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--tertiary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    background-color: var(--tertiary-color);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#levels {
+    background-color: rgb(231, 176, 203);
+}
+
+#levels .level-card{
+    background-color: var(--primary-color);
+}
