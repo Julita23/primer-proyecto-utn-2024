@@ -128,7 +128,7 @@ section {
 
 #contact {
     font-family: var(--primary-font);
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
 }
 
 #contact h1 {
@@ -174,7 +174,7 @@ footer .separator {
     height: 0;
     border-right: 100vw solid transparent;
     border-bottom: 12vw solid rgb(231, 176, 203);
-    margin-top: -13.3vw;
+    margin-top: -13.5vw;
     right: 25px;
 }
 
@@ -188,7 +188,7 @@ footer {
 }
 
 footer h5 {
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
 }
 
@@ -196,6 +196,15 @@ footer h5 {
     padding: 10px;
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 17px;
+}
+
+.social-media img {
+    width: 17px;
+    height: auto;
+    border-radius: 50px;
+    position: relative;
+    top: 3px;
 }
 
 .container {
