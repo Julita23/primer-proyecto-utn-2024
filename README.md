@@ -1,4 +1,4 @@
-# [ ARIA  CROCHET]
+# [ARIA  CROCHET]
 
 ## Resumen
 Aria crochet es un proyecto dedicado 100% a la técnica de tejido al crochet como bien indica su nombre,
