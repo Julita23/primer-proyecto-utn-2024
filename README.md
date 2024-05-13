@@ -18,6 +18,8 @@ Esta página cuenta con las siguientes secciones:
 - Formulario de contacto
 - Nuestras redes sociales y contacto via whatsapp.
 
-## Lenguajes utilizados en este proyecto
+## Lenguajes y herramientas utilizadas en este proyecto
 - HTML
 - CSS
+- GIT
+- GITHUB
