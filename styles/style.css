@@ -165,3 +165,22 @@ textarea {
 #contact button:hover {
     transform: scale(1.1);
 }
+
+footer {
+    padding: 25px 0 25px 20px;
+    background-color: rgb(231, 176, 203);
+    color: white;
+    font-family: var(--primary-font);
+    top: 20px
+}
+
+footer .separator {
+    position: relative;
+    margin-top: 10px;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 12vw solid rgb(231, 176, 203);
+    margin-top: -13.9vw;
+    right: 25px;
+}
