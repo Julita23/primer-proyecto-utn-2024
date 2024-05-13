@@ -128,6 +128,7 @@ section {
 
 #contact {
     font-family: var(--primary-font);
+    background-color: var(--primary-color)
 }
 
 #contact h1 {
@@ -166,21 +167,72 @@ textarea {
     transform: scale(1.1);
 }
 
-footer {
-    padding: 25px 0 25px 20px;
-    background-color: rgb(231, 176, 203);
-    color: white;
-    font-family: var(--primary-font);
-    top: 20px
-}
-
 footer .separator {
     position: relative;
-    margin-top: 10px;
+    margin-bottom: 10px;
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
     border-bottom: 12vw solid rgb(231, 176, 203);
-    margin-top: -13.9vw;
+    margin-top: -13.3vw;
     right: 25px;
+}
+
+
+footer {
+    padding: 25px 0 25px 20px;
+    background-color: rgb(231, 176, 203);;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    top: 20px
+}
+
+footer h5 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.social-media a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp img {
+    width: 70px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    border: transparent;
+    padding: 2px;
+}
+
+@media (max-width: 880px) {
+
+    #levels .container-grid-levels,
+    #benefits .container-grid-benefits {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #levels .container-grid-levels,
+    #benefits .container-grid-benefits {
+        grid-template-columns: 1fr;
+    }
 }
